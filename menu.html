@@ -1,43 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="smoky.css">
 </head>
-<body>
+
+<body style = "background-color: rgb(230, 230, 176);">
     <div class=tabs>
-        <a href="home.html">Home</a>
+        <a href="home.html"> Home</a>
         <a href="menu.html"> Menu </a>
         <a href="order.html">Order</a>
+    </div>
 
-   <table style=width:100%>
-       <thead></thead>
-        <th colspan=2>MENU</th> 
-    
-       <tr>
-           <td> Meat Lover</td>
-           <td><img class=table-img src="smokyimg/meatlover.jpeg" alt="Meatlover"></td>
-       </tr>
-       <tr>
-           <td>Beef</td>
-           <td> <img class=table-img src="smokyimg/burger - Copy.jpg" alt="Beef"></td>
-       </tr>
-       <tr>
-        <td>Smoky</td>
-        <td><img class=table-img src="smokyimg/meatlover.jpeg" alt="Smoky"></td>
-    </tr>
-    <tr>
-        <td>Chicken</td>
-        <td><img class=table-img src="smokyimg/chicken.jpeg" alt="Chicken"></td>
-    </tr>
-    <tr>
-        <td>Vegetarian</td>
-        <td><img class=table-img src="smokyimg/vegy.jpeg" alt="Vegetarian"></td>
-    </tr>
-   </table>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <table style="background-color: whitesmoke;" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Burger</th>
+                            <th>Image</th>
+                            <th>Order</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <h4>Meat Lover</h4>
+                                <p>Ingredience: Double slice meat, letuce, tomato, cucumber, souce <em>Price: 990
+                                        Ft</em></p>
+                            </td>
+                            <td><img class=table-img src="smokyimg/meatlover.jpeg" alt="Meatlover"></td>
+                            <td>
+                                <form action="">
+                                    <label for="">Amount</label>
+                                    <input type="number" name="menuAmount">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <h4>Beef</h4>
+                                <p>Ingredience: One slice meat, letuce, tomato, cucumber, souce <em>Price: 990 Ft</em>
+                                </p>
+                            </td>
+                            <td> <img class=table-img src="smokyimg/burger - Copy.jpg" alt="Beef"></td>
+                            <td>
+                                <form action="">
+                                    <label for="">Amount</label>
+                                    <input type="number" name="menuAmount">
+                                </form>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <h4>Smoky</h4>
+                                <p>Ingredience: Smoked pork, letuce, tomato, cucumber, souce <em>Price: 990 Ft</em></p>
+                            </td>
+                            <td><img class=table-img src="smokyimg/meatlover.jpeg" alt="Smoky"></td>
+                            <td>
+                                <form action="">
+                                    <label for="">Amount</label>
+                                    <input type="number" name="menuAmount">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <h4>Chicken</h4>
+                                <p>Ingredience: Grilled chicken, letuce, tomato, cucumber, souce <em>Price: 990 Ft</em>
+                                </p>
+                            </td>
+                            <td><img class=table-img src="smokyimg/chicken.jpeg" alt="Chicken"></td>
+                            <td>
+                                <form action="">
+                                    <label for="">Amount</label>
+                                    <input type="number" name="menuAmount">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <h4>Vegetarian</h4>
+                                <p>Ingredience: Vegeratian burger, letuce, tomato, cucumber, souce <em>Price: 990
+                                        Ft</em></p>
+                            </td>
+                            <td><img class=table-img src="smokyimg/vegy.jpeg" alt="Vegetarian"></td>
+                            <td>
+                                <form action="">
+                                    <label for="">Amount</label>
+                                    <input type="number" name="menuAmount">
+                                </form>
+                            </td>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan=3>
+                                <div class="form-group">
+                                    Payable: <span class="show-amount1">0</span>Ft
+                                </div>
+                                <button onclick="calcFullAmount()" type="button" class="btn btn-success">Order</button>
+                            </td>
+                        </tr>
+                    </tfoot>
 
 
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
